@@ -7,13 +7,13 @@ interface Props {
   children?: React.ReactNode
 }
 
-function Button({ onClick, type, children }: Props) {
+function Button({ onClick, type, texto }: Props) {
   return (
     <button
       onClick={onClick}
       type={type}
       className={style.botao}>
-      {children}
+      {texto}
     </button>
   )
 }
